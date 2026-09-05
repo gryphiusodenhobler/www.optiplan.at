@@ -8,7 +8,6 @@ header:
 
 <section class="hero-section">
   <div class="hero-inner">
-    <p class="hero-kicker">OPTIPLAN</p>
 
     <h1>
       Gebäude technisch gedacht.
