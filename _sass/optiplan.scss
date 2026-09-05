@@ -426,3 +426,99 @@ body {
     height: 360px;
   }
 }
+/* ------------------------------------------------
+   LEISTUNGEN
+   ------------------------------------------------ */
+
+/* Einstieg */
+
+.services-hero {
+  padding: 5rem 0 8rem;
+}
+
+.services-hero h2 {
+  margin: 0 0 3rem 0;
+  padding: 0;
+  border: 0 !important;
+  font-size: clamp(2.8rem, 5vw, 5rem);
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -0.045em;
+}
+
+.services-hero .section-text {
+  max-width: 720px;
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+
+/* Abschnitte 01–06 */
+
+.services-section {
+  border-top: 1px solid #e8e8e8;
+  padding: 8rem 0;
+  min-height: 65vh;
+}
+
+
+/* Nummerierung */
+
+.services-section .section-number {
+  margin: 0 0 5rem 0;
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  color: #999;
+  opacity: 1;
+}
+
+
+/* Kapitelüberschriften */
+
+.services-section h2 {
+  margin: 0 0 3rem 0;
+  padding: 0;
+  border: 0 !important;
+  font-size: clamp(2.8rem, 5vw, 5rem);
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -0.045em;
+}
+
+
+/* Text */
+
+.services-section .section-text {
+  max-width: 720px;
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+
+/* Fachbereiche */
+
+.services-list {
+  line-height: 2 !important;
+}
+
+
+/* Mobil */
+
+@media (max-width: 768px) {
+
+  .services-hero {
+    padding: 3rem 0 5rem;
+  }
+
+  .services-section {
+    padding: 5rem 0;
+    min-height: auto;
+  }
+
+  .services-section .section-number {
+    margin-bottom: 3rem;
+  }
+}
