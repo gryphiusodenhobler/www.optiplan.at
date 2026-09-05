@@ -4,8 +4,6 @@ title: "Leistungen"
 permalink: /leistungen/
 ---
 
-# Leistungen
-
 Wir planen technische Gebäudeausrüstung über alle wesentlichen Bereiche der Gebäudetechnik.
 
 ## Heizung
