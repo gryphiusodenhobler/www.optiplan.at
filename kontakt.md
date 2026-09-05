@@ -35,3 +35,10 @@ permalink: /kontakt/
   </div>
 
 </div>
+<div class="contact-map">
+  <iframe
+    src="https://www.openstreetmap.org/export/embed.html?bbox=13.12%2C47.88%2C13.18%2C47.92&amp;layer=mapnik"
+    loading="lazy"
+    title="Standort Optiplan in Seekirchen am Wallersee">
+  </iframe>
+</div>
