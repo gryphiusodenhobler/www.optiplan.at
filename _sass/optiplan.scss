@@ -273,4 +273,86 @@ body {
 .greedy-nav .optiplan-logo:hover {
   opacity: 0.75;
 }
+/* ------------------------------------------------
+   STARTSEITE – ABSCHNITTE 01 / 02 / 03
+   ------------------------------------------------ */
 
+.intro-section,
+.detail-section,
+.contact-section {
+  border-top: 1px solid #e8e8e8;
+  padding: 8rem 0;
+  min-height: 65vh;
+}
+
+/* Nummerierung */
+
+.intro-section .section-number,
+.detail-section .section-number,
+.contact-section .section-number {
+  margin: 0 0 5rem 0;
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  color: #999;
+  opacity: 1;
+}
+
+/* Große Kapitelüberschriften */
+
+.intro-section h2,
+.detail-section h2,
+.contact-section h2 {
+  margin: 0 0 3rem 0;
+  padding: 0;
+  border: 0 !important;
+  font-size: clamp(2.8rem, 5vw, 5rem);
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -0.045em;
+}
+
+/* Text */
+
+.intro-section .section-text,
+.detail-section .section-text,
+.contact-section .section-text {
+  max-width: 720px;
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* Kontaktlink */
+
+.contact-section .section-link {
+  margin-top: 3rem;
+}
+
+.contact-section .section-link a {
+  color: #1f1f1f;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.contact-section .section-link a:hover {
+  color: #8f2638;
+}
+
+/* Mobil */
+
+@media (max-width: 768px) {
+  .intro-section,
+  .detail-section,
+  .contact-section {
+    padding: 5rem 0;
+    min-height: auto;
+  }
+
+  .intro-section .section-number,
+  .detail-section .section-number,
+  .contact-section .section-number {
+    margin-bottom: 3rem;
+  }
+}
