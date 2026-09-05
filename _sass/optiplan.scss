@@ -522,3 +522,19 @@ body {
     margin-bottom: 3rem;
   }
 }
+/* LEISTUNGEN – NUMMER IM ERSTEN ABSCHNITT */
+
+.services-hero .section-number {
+  margin: 0 0 5rem 0;
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  color: #999;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .services-hero .section-number {
+    margin-bottom: 3rem;
+  }
+}
