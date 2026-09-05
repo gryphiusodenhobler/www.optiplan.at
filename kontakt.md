@@ -4,8 +4,6 @@ title: "Kontakt"
 permalink: /kontakt/
 ---
 
-# Kontakt
-
 **OPTIPLAN**  
 Ingenieurgesellschaft für technische Gebäudeausrüstung  
 und Energiewirtschaft GmbH
