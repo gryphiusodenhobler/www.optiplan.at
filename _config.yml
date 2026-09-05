@@ -1,5 +1,6 @@
 title: Optiplan
 description: Büro für Gebäude- und Installationstechnik
+
 url: "https://gryphiusodenhobler.github.io"
 baseurl: "/www.optiplan.at"
 
@@ -9,8 +10,10 @@ minimal_mistakes_skin: "default"
 
 plugins:
   - jekyll-include-cache
+
 footer:
   links: []
 
 atom_feed:
   hide: true
+  
