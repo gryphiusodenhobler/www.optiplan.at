@@ -189,3 +189,65 @@ body {
   font-weight: 400;
   color: #777;
 }
+
+/* ------------------------------------------------
+   HEADER
+   ------------------------------------------------ */
+
+.masthead {
+  background: #fff;
+  border: 0;
+  box-shadow: none;
+}
+
+.masthead__inner-wrap {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1.6rem 4rem;
+}
+
+.greedy-nav {
+  background: transparent;
+  align-items: center;
+}
+
+.greedy-nav .site-title {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.greedy-nav .visible-links {
+  margin-left: auto;
+}
+
+.greedy-nav .visible-links a {
+  margin-left: 2.2rem;
+  padding: 0;
+  font-size: 0.82rem;
+  font-weight: 400;
+  color: #333;
+  transition: opacity 0.2s ease;
+}
+
+.greedy-nav .visible-links a:hover {
+  color: #111;
+  opacity: 0.55;
+}
+
+.greedy-nav .visible-links a::before {
+  display: none;
+}
+
+/* Mobil etwas kompakter */
+
+@media (max-width: 768px) {
+  .masthead__inner-wrap {
+    padding: 1.25rem 1.5rem;
+  }
+
+  .greedy-nav .site-title {
+    font-size: 0.9rem;
+  }
+}
