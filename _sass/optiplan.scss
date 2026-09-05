@@ -406,3 +406,23 @@ body {
 .contact-route a:hover {
   color: #8f2638;
 }
+/* KONTAKT – KARTE */
+
+.contact-map {
+  margin-top: 4rem;
+  width: 100%;
+}
+
+.contact-map iframe {
+  display: block;
+  width: 100%;
+  height: 520px;
+  border: 0;
+  filter: grayscale(100%);
+}
+
+@media (max-width: 768px) {
+  .contact-map iframe {
+    height: 360px;
+  }
+}
