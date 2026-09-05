@@ -61,3 +61,61 @@ body {
   font-size: 1.1rem;
   line-height: 1.75;
 }
+/* OPTIPLAN – clean layout */
+
+.masthead {
+  border-bottom: 0;
+  box-shadow: none;
+}
+
+.masthead__inner-wrap {
+  max-width: 1400px;
+  padding: 1.5rem 4rem;
+}
+
+.site-title {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.greedy-nav {
+  background: #fff;
+}
+
+.greedy-nav a {
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+.page__footer {
+  background: #fff;
+  border-top: 1px solid #eee;
+}
+
+.page__footer-follow,
+.page__footer-copyright {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.splash .page__content {
+  margin: 0;
+}
+
+.hero-section {
+  min-height: 75vh;
+}
+
+.hero-section h1 {
+  border: 0;
+  font-size: clamp(4rem, 8vw, 7.5rem);
+  font-weight: 500;
+  line-height: 0.95;
+}
+
+.intro-section,
+.projects-section {
+  border-top: 1px solid #e8e8e8;
+}
+
