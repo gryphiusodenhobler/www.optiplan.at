@@ -35,9 +35,37 @@ header:
   </div>
 </section>
 
-<section class="projects-section">
+<section class="detail-section">
   <div class="section-inner">
     <p class="section-number">02</p>
-    <h2>Ausgewählte Projekte</h2>
+
+    <h2>
+      Gut beraten. Auch im Detail.
+    </h2>
+
+    <p class="section-text">
+      Nicht jedes Projekt benötigt eine umfassende Planung.
+      Auch bei einzelnen technischen Fragen, einer Kontrolle vor Ort
+      oder einer unabhängigen Einschätzung unterstützen wir gerne.
+    </p>
+  </div>
+</section>
+
+<section class="contact-section">
+  <div class="section-inner">
+    <p class="section-number">03</p>
+
+    <h2>
+      Ein Projekt vor Augen?
+    </h2>
+
+    <p class="section-text">
+      Ob umfassende Planung oder eine einzelne technische Frage –
+      sprechen wir darüber.
+    </p>
+
+    <p class="section-link">
+      <a href="{{ '/kontakt/' | relative_url }}">Kontakt →</a>
+    </p>
   </div>
 </section>
