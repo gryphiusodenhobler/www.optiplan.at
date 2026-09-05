@@ -9,3 +9,8 @@ minimal_mistakes_skin: "default"
 
 plugins:
   - jekyll-include-cache
+footer:
+  links: []
+
+atom_feed:
+  hide: true
