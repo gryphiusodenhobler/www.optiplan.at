@@ -3,11 +3,9 @@ description: Büro für Gebäude- und Installationstechnik
 url: ""
 baseurl: ""
 
-"mmistakes/minimal-mistakes@4.28.1"
-
-plugins:
-  - jekyll-include-cache
+locale: "de-AT"
 
 minimal_mistakes_skin: "default"
 
-locale: "de-AT"
+plugins:
+  - jekyll-include-cache
