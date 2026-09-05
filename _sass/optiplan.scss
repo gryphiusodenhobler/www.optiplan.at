@@ -251,3 +251,26 @@ body {
     font-size: 0.9rem;
   }
 }
+/* OPTIPLAN LOGO */
+
+.greedy-nav .optiplan-logo {
+  font-size: 1.45rem;
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  text-transform: none;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.greedy-nav .optiplan-logo .logo-opti {
+  color: #8f2638;
+}
+
+.greedy-nav .optiplan-logo .logo-plan {
+  color: #1f1f1f;
+}
+
+.greedy-nav .optiplan-logo:hover {
+  opacity: 0.75;
+}
+
