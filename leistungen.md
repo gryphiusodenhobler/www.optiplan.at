@@ -7,34 +7,20 @@ permalink: /leistungen/
 <section class="services-hero">
   <div class="section-inner">
 
-    <h2>
-      Technik planen.<br>
-      Bauherren begleiten.
-    </h2>
-
-    <p class="section-text">
-      Wir beraten, planen, berechnen, kontrollieren und begleiten die Umsetzung
-      technischer Lösungen im Gebäude. Dabei stehen Funktion, Wirtschaftlichkeit
-      und die Interessen des Bauherrn im Mittelpunkt.
-    </p>
-
-  </div>
-</section>
-
-<section class="services-section">
-  <div class="section-inner">
     <p class="section-number">01</p>
 
     <h2>
-      Beraten. Planen.<br>
-      Umsetzen.
+      Technische<br>
+      Gebäudeplanung.
     </h2>
 
     <p class="section-text">
-      Unsere Arbeit umfasst Ingenieurleistungen rund um die technische
-      Gebäudeausrüstung – von der ersten Idee über Planung und Berechnung
-      bis zur Begleitung der Ausführung.
+      Wir planen die technische Ausstattung von Gebäuden in den Bereichen
+      Heizung, Lüftung, Sanitär, Kälte und Energie. Dazu gehören die Entwicklung
+      technischer Konzepte, Berechnungen sowie Entwurfs-, Einreich-,
+      Ausschreibungs- und Ausführungsplanung.
     </p>
+
   </div>
 </section>
 
@@ -43,14 +29,15 @@ permalink: /leistungen/
     <p class="section-number">02</p>
 
     <h2>
-      Technik, die<br>
-      funktioniert.
+      Beratung &<br>
+      Konzepte.
     </h2>
 
     <p class="section-text">
-      Technische Lösungen müssen nicht nur rechnerisch funktionieren.
-      Sie müssen wirtschaftlich, bedienbar und in der Praxis umsetzbar sein –
-      für Menschen, Gebäude und Anlagen.
+      Wir beraten Bauherren bei technischen Fragestellungen und entwickeln
+      geeignete Lösungen für Neubauten, Umbauten und Sanierungen.
+      Bestehende Anlagen werden beurteilt und mögliche Varianten hinsichtlich
+      Funktion, Wirtschaftlichkeit und Umsetzbarkeit verglichen.
     </p>
   </div>
 </section>
@@ -60,14 +47,15 @@ permalink: /leistungen/
     <p class="section-number">03</p>
 
     <h2>
-      Erfahrung<br>
-      verbindet.
+      Berechnung &<br>
+      Dimensionierung.
     </h2>
 
     <p class="section-text">
-      Ingenieure, Techniker, Handwerker und spezialisierte Netzwerkpartner
-      bringen unterschiedliche Erfahrungen in unsere Projekte ein.
-      So verbinden wir Planung und praktische Umsetzung.
+      Wir berechnen und dimensionieren technische Anlagen und deren Komponenten.
+      Dazu gehören je nach Projekt beispielsweise Heiz- und Kühllasten,
+      Luftmengen, Rohr- und Kanalnetze sowie die erforderlichen Leistungen
+      technischer Anlagen.
     </p>
   </div>
 </section>
@@ -77,15 +65,14 @@ permalink: /leistungen/
     <p class="section-number">04</p>
 
     <h2>
-      Präzise bis zur<br>
-      Umsetzung.
+      Ausschreibung &<br>
+      Vergabe.
     </h2>
 
     <p class="section-text">
-      Wir greifen die Anforderungen und Ideen unserer Kunden auf und führen
-      sie zielorientiert in die technische Umsetzung. Auch während der
-      Ausführung begleiten und kontrollieren wir die Arbeiten im Interesse
-      des Bauherrn.
+      Wir erstellen technische Ausschreibungen und Leistungsverzeichnisse,
+      prüfen Angebote und unterstützen den Bauherrn bei der technischen und
+      wirtschaftlichen Bewertung sowie bei der Vergabe.
     </p>
   </div>
 </section>
@@ -95,32 +82,49 @@ permalink: /leistungen/
     <p class="section-number">05</p>
 
     <h2>
-      Wissen bleibt<br>
-      nicht stehen.
+      Bauüberwachung &<br>
+      Kontrolle.
     </h2>
 
     <p class="section-text">
-      Technische Anforderungen, Normen und Systeme entwickeln sich laufend
-      weiter. Kontinuierliche Weiterbildung gehört deshalb zu unserem
-      Anspruch an Qualität und Planungssicherheit.
+      Wir kontrollieren die technische Ausführung auf der Baustelle und prüfen,
+      ob die Arbeiten entsprechend Planung, Ausschreibung und vereinbarten
+      Anforderungen umgesetzt werden. Festgestellte Abweichungen und offene
+      Punkte werden dokumentiert und mit den Beteiligten abgestimmt.
     </p>
   </div>
 </section>
 
-<section class="services-section services-fields">
+<section class="services-section">
   <div class="section-inner">
     <p class="section-number">06</p>
 
     <h2>
-      Fachbereiche.
+      Abnahme &<br>
+      Projektabschluss.
     </h2>
 
-    <p class="section-text services-list">
-      Heizung<br>
-      Lüftung<br>
-      Sanitär<br>
-      Kälte<br>
-      Energie
+    <p class="section-text">
+      Wir begleiten die Fertigstellung der technischen Anlagen, kontrollieren
+      Leistungen und Unterlagen und unterstützen bei Abnahmen,
+      Mängelfeststellungen und der technischen Übergabe.
+    </p>
+  </div>
+</section>
+
+<section class="services-section">
+  <div class="section-inner">
+    <p class="section-number">07</p>
+
+    <h2>
+      Technische Beratung<br>
+      im Detail.
+    </h2>
+
+    <p class="section-text">
+      Nicht jede Fragestellung erfordert einen vollständigen Planungsauftrag.
+      Wir unterstützen auch bei einzelnen technischen Fragen, Kontrollen vor Ort
+      oder einer unabhängigen Einschätzung bestehender oder geplanter Lösungen.
     </p>
   </div>
 </section>
