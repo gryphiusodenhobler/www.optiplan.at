@@ -791,6 +791,70 @@ body {
 .services-intro .services-kicker {
   margin-bottom: 2rem;
 }
+
+/* OPTIPLAN – STARTSEITE */
+
+.hero-section.optiplan-hero {
+  min-height: 620px;
+  padding: 5rem 0 6rem;
+  display: flex;
+  align-items: center;
+}
+
+.optiplan-hero .hero-inner.optiplan-hero-grid {
+  width: min(1200px, 88%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 4rem;
+}
+
+.optiplan-hero-copy {
+  min-width: 0;
+}
+
+.optiplan-hero .optiplan-hero-kicker {
+  margin: 0 0 2rem;
+  color: #8f2638;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+.optiplan-hero .optiplan-hero-copy h1 {
+  max-width: 540px;
+  margin: 0 0 1.75rem;
+  padding: 0;
+  border: 0;
+  color: #1f1f1f;
+  font-size: clamp(2.4rem, 3.4vw, 3.5rem);
+  font-weight: 600;
+  line-height: 1.12;
+  letter-spacing: -0.04em;
+}
+
+.optiplan-hero .optiplan-hero-copy .hero-text {
+  max-width: 430px;
+  margin: 0;
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.optiplan-hero-art {
+  width: 100%;
+  min-width: 0;
+}
+
+.optiplan-hero-art svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Smartphone */
+
 @media (max-width: 768px) {
   .hero-section.optiplan-hero {
     min-height: auto;
