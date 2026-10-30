@@ -83,3 +83,15 @@ header:
     </p>
   </div>
 </section>
+/* Planung mit Klarheit – Illustration */
+
+.planung-illustration {
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.planung-illustration img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
