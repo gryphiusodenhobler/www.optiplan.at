@@ -883,3 +883,38 @@ body {
     margin: 0 auto;
   }
 }
+/* Optiplan – kompaktere Abschnittsgestaltung */
+
+.intro-section,
+.detail-section,
+.contact-section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+/* Überschriften der Abschnitte 01–03 */
+
+.intro-section h2,
+.detail-section h2,
+.contact-section h2 {
+  font-size: clamp(2.2rem, 3.4vw, 3.5rem);
+  line-height: 1.12;
+  letter-spacing: -0.035em;
+}
+
+/* Abstand zwischen Nummer und Überschrift */
+
+.intro-section .section-number,
+.detail-section .section-number,
+.contact-section .section-number {
+  margin-bottom: 1.5rem;
+}
+
+/* Abstand zwischen Beschreibung und Illustration */
+
+.planung-illustration {
+  margin-top: 1.5rem;
+}
+
+
+
