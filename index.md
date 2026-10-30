@@ -23,7 +23,7 @@ header:
 <div class="optiplan-hero-art">
   <img src="{{ '/assets/Isometrisches%20TGA-Schema%20mit%20roten%20Akzenten.png' | relative_url }}"
        alt="Isometrische HKLS-Zeichnung"
-       style="display:block; width:100%; height:auto;">
+       style="display:block; width:150%; height:auto;">
 </div>
 
   </div>
