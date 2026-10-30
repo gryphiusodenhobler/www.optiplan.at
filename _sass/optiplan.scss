@@ -689,3 +689,23 @@ body {
     font-size: 1rem;
   }
 }
+}
+
+.service-item summary {
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+}
+
+.service-content p {
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .services-intro h2 {
+    font-size: clamp(1.8rem, 6vw, 2.4rem);
+  }
+
+  .service-title {
+    font-size: 1.15rem;
+  }
+}
