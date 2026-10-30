@@ -780,3 +780,14 @@ body {
 .services-accordion {
   width: 100%;
 }
+.page:has(.services-page) .page__title {
+  display: none;
+}
+.services-intro {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.services-intro .services-kicker {
+  margin-bottom: 2rem;
+}
