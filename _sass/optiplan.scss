@@ -724,7 +724,35 @@ body {
     font-size: 1.05rem;
   }
 }
+
+/* LEISTUNGEN – ENDGÜLTIGE SCHRIFTGRÖSSEN */
+
 .services-page .services-intro h2 {
-  font-size: 24px !important;
-  color: #8f2638 !important;
+  font-size: 2.5rem !important;
+  line-height: 1.15;
+  color: #1f1f1f !important;
+}
+
+.services-page .service-item .service-title {
+  font-size: 1.15rem !important;
+  line-height: 1.35;
+}
+
+.services-page .service-item summary {
+  padding-top: 1.35rem;
+  padding-bottom: 1.35rem;
+}
+
+.services-page .service-content p {
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .services-page .services-intro h2 {
+    font-size: 2rem !important;
+  }
+
+  .services-page .service-item .service-title {
+    font-size: 1.05rem !important;
+  }
 }
