@@ -522,24 +522,154 @@ body {
     margin-bottom: 3rem;
   }
 }
-/* LEISTUNGEN – NUMMER IM ERSTEN ABSCHNITT */
+/* ----------------------------------------------
+   OPTIPLAN – LEISTUNGEN / ACCORDION
+   ---------------------------------------------- */
 
-.services-hero .section-number {
-  margin: 0 0 5rem 0;
+.services-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 0 7rem;
+}
+
+/* Einleitung */
+
+.services-intro {
+  padding: 3rem 0 5rem;
+}
+
+.services-intro .services-kicker {
+  margin: 0 0 3rem;
+  color: #8f2638;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+}
+
+.services-intro h2 {
+  margin: 0 0 2rem;
+  padding: 0;
+  border: 0 !important;
+  color: #1f1f1f;
+  font-size: clamp(2.8rem, 5vw, 5rem);
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -0.045em;
+}
+
+.services-intro > p:last-child {
+  max-width: 720px;
+  margin: 0;
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* Liste und Trennlinien */
+
+.services-accordion {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.service-item {
+  border-top: 1px solid #e5e5e5;
+}
+
+.service-item summary {
+  display: grid;
+  grid-template-columns: 65px minmax(0, 1fr) 24px;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 0;
+  cursor: pointer;
+  list-style: none;
+}
+
+.service-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.service-item summary::marker {
+  content: "";
+}
+
+/* Nummerierung */
+
+.service-number {
+  color: #999;
   font-size: 0.75rem;
   font-weight: 400;
-  letter-spacing: 0.18em;
-  color: #999;
-  opacity: 1;
+  letter-spacing: 0.1em;
 }
+
+/* Überschriften */
+
+.service-title {
+  color: #1f1f1f;
+  font-size: clamp(1.25rem, 2.2vw, 1.85rem);
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -0.035em;
+  transition: color 0.2s ease;
+}
+
+.service-item summary:hover .service-title,
+.service-item[open] .service-title {
+  color: #8f2638;
+}
+
+/* Pfeil */
+
+.service-arrow {
+  width: 9px;
+  height: 9px;
+  justify-self: center;
+  border-right: 1.5px solid #777;
+  border-bottom: 1.5px solid #777;
+  transform: rotate(45deg);
+  transition: transform 0.2s ease;
+}
+
+.service-item[open] .service-arrow {
+  transform: rotate(225deg);
+}
+
+/* Aufgeklappter Text */
+
+.service-content {
+  padding: 0 3rem 2.5rem 81px;
+}
+
+.service-content p {
+  max-width: 720px;
+  margin: 0;
+  color: #555;
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+/* Tastaturbedienung */
+
+.service-item summary:focus-visible {
+  outline: 2px solid #8f2638;
+  outline-offset: 4px;
+}
+
+/* Smartphone */
 
 @media (max-width: 768px) {
-  .services-hero .section-number {
-    margin-bottom: 3rem;
-  }
-}
 
- }
+  .services-page {
+    padding: 0 0 4rem;
+  }
+
+  .services-intro {
+    padding: 2rem 0 4rem;
+  }
+
+  .services-intro .services-kicker {
+    margin-bottom: 2rem;
+  }
 
   .service-item summary {
     grid-template-columns: 32px minmax(0, 1fr) 18px;
