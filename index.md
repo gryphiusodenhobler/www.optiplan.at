@@ -48,20 +48,26 @@ header:
 
   </div>
 </section>
-
 <section class="detail-section">
-  <div class="section-inner">
-    <p class="section-number">02</p>
+  <div class="section-inner detail-grid">
 
-    <h2>
-      Gut beraten. Auch im Detail.
-    </h2>
+<div class="detail-illustration">
+      <img src="{{ '/assets/beratung-im-detail.png' | relative_url }}"
+           alt="Heizungsschema mit vergrößerter technischer Detailzeichnung">
+    </div>
 
-    <p class="section-text">
-      Nicht jedes Projekt benötigt eine umfassende Planung.
-      Auch bei einzelnen technischen Fragen, einer Kontrolle vor Ort
-      oder einer unabhängigen Einschätzung unterstützen wir gerne.
-    </p>
+    <div class="detail-content">
+      <p class="section-number">02</p>
+
+      <h2>Gut beraten. Auch im Detail.</h2>
+
+      <p class="section-text">
+        Nicht jedes Projekt benötigt eine umfassende Planung.
+        Auch bei einzelnen technischen Fragen, einer Kontrolle vor Ort
+        oder einer unabhängigen Einschätzung unterstützen wir gerne.
+      </p>
+    </div>
+
   </div>
 </section>
 
