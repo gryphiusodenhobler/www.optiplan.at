@@ -10,7 +10,6 @@ header:
   <div class="hero-inner optiplan-hero-grid">
 
     <div class="optiplan-hero-copy">
-      <p class="optiplan-hero-kicker">01 / GEBÄUDETECHNIK</p>
 
       <h1>Gebäude technisch gedacht.</h1>
 
@@ -31,8 +30,6 @@ header:
 
 <section class="intro-section">
   <div class="section-inner">
-
-    <p class="section-number">01</p>
 
     <h2>Planung mit Klarheit.</h2>
 
@@ -57,7 +54,6 @@ header:
     </div>
 
     <div class="detail-content">
-      <p class="section-number">02</p>
 
       <h2>Gut beraten. Auch im Detail.</h2>
 
@@ -73,7 +69,6 @@ header:
 
 <section class="contact-section">
   <div class="section-inner">
-    <p class="section-number">03</p>
 
     <h2>
       Ein Projekt vor Augen?
