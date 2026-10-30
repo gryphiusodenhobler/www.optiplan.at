@@ -916,5 +916,33 @@ body {
   margin-top: 1.5rem;
 }
 
+/* Abschnitt 02 – Bild links, Text rechts */
 
+.detail-section .detail-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  align-items: center;
+  gap: 4rem;
+}
+
+.detail-illustration img {
+  display: block;
+  width: 135%;
+  max-width: none;
+  height: auto;
+  transform: translateX(-12%);
+}
+
+@media (max-width: 768px) {
+  .detail-section .detail-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .detail-illustration img {
+    width: 100%;
+    max-width: 100%;
+    transform: none;
+  }
+}
 
