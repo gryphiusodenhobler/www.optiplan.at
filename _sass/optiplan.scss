@@ -756,3 +756,27 @@ body {
     font-size: 1.05rem !important;
   }
 }
+/* LEISTUNGEN – SEITENLAYOUT */
+
+.page:has(.services-page) {
+  width: 100%;
+  max-width: none;
+  float: none;
+}
+
+.page:has(.services-page) .page__inner-wrap {
+  width: 100%;
+}
+
+.page:has(.services-page) .page__content {
+  width: 100%;
+}
+
+.services-page {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.services-accordion {
+  width: 100%;
+}
