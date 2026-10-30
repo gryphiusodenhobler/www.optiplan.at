@@ -31,16 +31,21 @@ header:
 
 <section class="intro-section">
   <div class="section-inner">
+
     <p class="section-number">01</p>
 
-    <h2>
-      Planung mit Klarheit.
-    </h2>
+    <h2>Planung mit Klarheit.</h2>
 
     <p class="section-text">
       Wir planen technische Gebäudeausrüstung mit Fokus auf Funktion,
       Wirtschaftlichkeit und eine saubere Umsetzung.
     </p>
+
+    <div class="planung-illustration">
+      <img src="{{ '/assets/planung-mit-klarheit.png' | relative_url }}"
+           alt="Von einer ungeordneten Skizze zur klaren technischen Gebäudeplanung">
+    </div>
+
   </div>
 </section>
 
