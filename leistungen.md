@@ -23,7 +23,7 @@ permalink: /leistungen/
 <button class="optiplan-tile" type="button" data-service="0" aria-expanded="false">
   <img
     class="optiplan-tile-image"
-    src="{{ '/assets/images/leistungen/technische-gebaeudeplanung.png' | relative_url }}"
+    src="{{ '/assets/technische-gebaeudeplanung.png' | relative_url }}"
     alt=""
     loading="lazy"
   >
