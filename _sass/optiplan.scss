@@ -960,3 +960,20 @@ body {
   object-fit: contain;
   flex-shrink: 0;
 }
+/* Optiplan Logo – kompakte Kopfzeile */
+
+.masthead .site-title.optiplan-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  white-space: nowrap;
+}
+
+.masthead .site-title.optiplan-logo img.optiplan-ornament {
+  width: 38px !important;
+  height: 38px !important;
+  max-width: 38px !important;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+}
