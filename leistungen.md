@@ -21,21 +21,15 @@ permalink: /leistungen/
     <div class="optiplan-tile-row">
 
       <button class="optiplan-tile" type="button" data-service="0" aria-expanded="false">
-        <span class="optiplan-tile-number">01</span>
         <span class="optiplan-tile-title">Technische Gebäudeplanung</span>
-        <span class="optiplan-tile-plus" aria-hidden="true">+</span>
       </button>
 
       <button class="optiplan-tile" type="button" data-service="1" aria-expanded="false">
-        <span class="optiplan-tile-number">02</span>
         <span class="optiplan-tile-title">Beratung &amp; Konzepte</span>
-        <span class="optiplan-tile-plus" aria-hidden="true">+</span>
       </button>
 
       <button class="optiplan-tile" type="button" data-service="2" aria-expanded="false">
-        <span class="optiplan-tile-number">03</span>
         <span class="optiplan-tile-title">Berechnung &amp; Dimensionierung</span>
-        <span class="optiplan-tile-plus" aria-hidden="true">+</span>
       </button>
 
     </div>
@@ -53,21 +47,15 @@ permalink: /leistungen/
     <div class="optiplan-tile-row">
 
       <button class="optiplan-tile" type="button" data-service="3" aria-expanded="false">
-        <span class="optiplan-tile-number">04</span>
         <span class="optiplan-tile-title">Ausschreibung &amp; Vergabe</span>
-        <span class="optiplan-tile-plus" aria-hidden="true">+</span>
       </button>
 
       <button class="optiplan-tile" type="button" data-service="4" aria-expanded="false">
-        <span class="optiplan-tile-number">05</span>
         <span class="optiplan-tile-title">Bauüberwachung &amp; Kontrolle</span>
-        <span class="optiplan-tile-plus" aria-hidden="true">+</span>
       </button>
 
       <button class="optiplan-tile" type="button" data-service="5" aria-expanded="false">
-        <span class="optiplan-tile-number">06</span>
         <span class="optiplan-tile-title">Abnahme &amp; Projektabschluss</span>
-        <span class="optiplan-tile-plus" aria-hidden="true">+</span>
       </button>
 
     </div>
