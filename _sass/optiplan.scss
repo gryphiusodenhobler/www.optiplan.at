@@ -945,4 +945,18 @@ body {
     transform: none;
   }
 }
+/* Optiplan – Ornament im Webseitenkopf */
 
+.site-title.optiplan-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.optiplan-ornament {
+  display: block;
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
