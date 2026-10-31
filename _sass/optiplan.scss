@@ -1239,3 +1239,19 @@ body {
     font-size: 1.25rem;
   }
 }
+/* OPTIPLAN – ILLUSTRATIONEN LEISTUNGSKACHELN */
+
+.optiplan-tile-image {
+  display: block;
+  width: 100%;
+  height: 72%;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 1;
+  min-height: 0;
+  margin-bottom: auto;
+}
+
+.optiplan-tile-title {
+  flex-shrink: 0;
+}
