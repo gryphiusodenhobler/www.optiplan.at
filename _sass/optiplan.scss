@@ -883,13 +883,36 @@ body {
     margin: 0 auto;
   }
 }
-/* Optiplan – kompaktere Abschnittsgestaltung */
+
+/* OPTIPLAN – STARTSEITE: ABSTÄNDE OHNE TRENNLINIEN */
+
+.hero-section.optiplan-hero {
+  min-height: 0;
+  padding-top: 3.5rem;
+  padding-bottom: 2.5rem;
+}
 
 .intro-section,
 .detail-section,
 .contact-section {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  border-top: none;
+  min-height: 0;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+@media (max-width: 768px) {
+  .hero-section.optiplan-hero {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+
+  .intro-section,
+  .detail-section,
+  .contact-section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
 }
 
 /* Überschriften der Abschnitte 01–03 */
