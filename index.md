@@ -36,7 +36,7 @@ header:
     </div>
 
     <div class="detail-content">
-      <h2>Gut beraten. Auch im Detail.</h2>
+      <h2>Gut beraten.<br>Auch im Detail.</h2>
 
       <p class="section-text">
         Nicht jedes Projekt benötigt eine umfassende Planung.
