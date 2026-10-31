@@ -977,3 +977,19 @@ body {
   display: block;
   flex-shrink: 0;
 }
+/* Optiplan Logo – Feinanpassung */
+
+.masthead .site-title.optiplan-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  white-space: nowrap;
+}
+
+.masthead .site-title.optiplan-logo img.optiplan-ornament {
+  width: 58px !important;
+  height: 58px !important;
+  max-width: 58px !important;
+  margin-right: 12px;
+  object-fit: contain;
+}
