@@ -8,9 +8,12 @@
         {% unless logo_path == empty %}
           <a class="site-logo" href="{{ '/' | relative_url }}"><img src="{{ logo_path | relative_url }}" alt="{{ site.masthead_title | default: site.title }}"></a>
         {% endunless %}
-        <a class="site-title optiplan-logo" href="{{ '/' | relative_url }}" aria-label="Optiplan Startseite">
+<a class="site-title optiplan-logo" href="{{ '/' | relative_url }}" aria-label="Optiplan Startseite">
+  <img class="optiplan-ornament"
+       src="{{ '/assets/optiplan-ornament.png' | relative_url }}"
+       alt="">
   <span class="logo-opti">Opti</span><span class="logo-plan">plan</span>
-</a>
+</a> 
         <ul class="visible-links">
           {%- for link in site.data.navigation.main -%}
             <li class="masthead__menu-item">
