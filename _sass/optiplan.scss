@@ -914,13 +914,13 @@ body {
     padding-bottom: 3rem;
   }
 }
-
-/* Überschriften der Abschnitte 01–03 */
+/* Überschriften der Startseite – einheitliche Schriftstärke */
 
 .intro-section h2,
 .detail-section h2,
 .contact-section h2 {
   font-size: clamp(2.2rem, 3.4vw, 3.5rem);
+  font-weight: 600;
   line-height: 1.12;
   letter-spacing: -0.035em;
 }
