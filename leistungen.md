@@ -20,9 +20,15 @@ permalink: /leistungen/
     <!-- Erste Kachelreihe -->
     <div class="optiplan-tile-row">
 
-      <button class="optiplan-tile" type="button" data-service="0" aria-expanded="false">
-        <span class="optiplan-tile-title">Technische Gebäudeplanung</span>
-      </button>
+<button class="optiplan-tile" type="button" data-service="0" aria-expanded="false">
+  <img
+    class="optiplan-tile-image"
+    src="{{ '/assets/images/leistungen/technische-gebaeudeplanung.png' | relative_url }}"
+    alt=""
+    loading="lazy"
+  >
+  <span class="optiplan-tile-title">Technische Gebäudeplanung</span>
+</button>
 
       <button class="optiplan-tile" type="button" data-service="1" aria-expanded="false">
         <span class="optiplan-tile-title">Beratung &amp; Konzepte</span>
