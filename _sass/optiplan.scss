@@ -914,6 +914,12 @@ body {
     padding-bottom: 3rem;
   }
 }
+/* Kontaktabschnitt – kompakterer Übergang */
+
+.contact-section {
+  padding-top: 1.5rem;
+}
+
 /* Überschriften der Startseite – einheitliche Schriftstärke */
 
 .intro-section h2,
@@ -938,12 +944,23 @@ body {
 .planung-illustration {
   margin-top: 1.5rem;
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .planung-illustration img {
   display: block;
-  width: 100%;
+  width: 112%;
+  max-width: none;
   height: auto;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .planung-illustration img {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 /* Gut beraten – Bild links, Text rechts */
@@ -966,10 +983,10 @@ body {
 
 .detail-illustration img {
   display: block;
-  width: 148%;
+  width: 165%;
   max-width: none;
   height: auto;
-  transform: translateX(-17%);
+  transform: translateX(-20%);
 }
 
 @media (max-width: 768px) {
