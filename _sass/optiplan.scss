@@ -889,7 +889,7 @@ body {
 .hero-section.optiplan-hero {
   min-height: 0;
   padding-top: 3.5rem;
-  padding-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .intro-section,
@@ -945,6 +945,7 @@ body {
   width: 100%;
   height: auto;
 }
+
 /* Gut beraten – Bild links, Text rechts */
 
 .detail-section .section-inner.detail-grid {
@@ -965,10 +966,10 @@ body {
 
 .detail-illustration img {
   display: block;
-  width: 135%;
+  width: 148%;
   max-width: none;
   height: auto;
-  transform: translateX(calc(-28% + 30px));
+  transform: translateX(-17%);
 }
 
 @media (max-width: 768px) {
@@ -987,7 +988,6 @@ body {
     transform: none;
   }
 }
-
 
 /* Optiplan – Ornament im Webseitenkopf */
 
