@@ -10,7 +10,6 @@ header:
   <div class="hero-inner optiplan-hero-grid">
 
     <div class="optiplan-hero-copy">
-
       <h1>Gebäude technisch gedacht.</h1>
 
       <p class="hero-text">
@@ -19,11 +18,32 @@ header:
       </p>
     </div>
 
-<div class="optiplan-hero-art">
-  <img src="{{ '/assets/Isometrisches%20TGA-Schema%20mit%20roten%20Akzenten.png' | relative_url }}"
-       alt="Isometrische HKLS-Zeichnung"
-       style="display:block; width:250%; height:auto;">
-</div>
+    <div class="optiplan-hero-art">
+      <img src="{{ '/assets/Isometrisches%20TGA-Schema%20mit%20roten%20Akzenten.png' | relative_url }}"
+           alt="Isometrische HKLS-Zeichnung"
+           style="display:block; width:250%; height:auto;">
+    </div>
+
+  </div>
+</section>
+
+<section class="detail-section">
+  <div class="section-inner detail-grid">
+
+    <div class="detail-illustration">
+      <img src="{{ '/assets/beratung-im-detail.png' | relative_url }}"
+           alt="Heizungsschema mit vergrößerter technischer Detailzeichnung">
+    </div>
+
+    <div class="detail-content">
+      <h2>Gut beraten. Auch im Detail.</h2>
+
+      <p class="section-text">
+        Nicht jedes Projekt benötigt eine umfassende Planung.
+        Auch bei einzelnen technischen Fragen, einer Kontrolle vor Ort
+        oder einer unabhängigen Einschätzung unterstützen wir gerne.
+      </p>
+    </div>
 
   </div>
 </section>
@@ -45,34 +65,11 @@ header:
 
   </div>
 </section>
-<section class="detail-section">
-  <div class="section-inner detail-grid">
-
-<div class="detail-illustration">
-      <img src="{{ '/assets/beratung-im-detail.png' | relative_url }}"
-           alt="Heizungsschema mit vergrößerter technischer Detailzeichnung">
-    </div>
-
-    <div class="detail-content">
-
-      <h2>Gut beraten. Auch im Detail.</h2>
-
-      <p class="section-text">
-        Nicht jedes Projekt benötigt eine umfassende Planung.
-        Auch bei einzelnen technischen Fragen, einer Kontrolle vor Ort
-        oder einer unabhängigen Einschätzung unterstützen wir gerne.
-      </p>
-    </div>
-
-  </div>
-</section>
 
 <section class="contact-section">
   <div class="section-inner">
 
-    <h2>
-      Ein Projekt vor Augen?
-    </h2>
+    <h2>Ein Projekt vor Augen?</h2>
 
     <p class="section-text">
       Ob umfassende Planung oder eine einzelne technische Frage –
@@ -82,17 +79,6 @@ header:
     <p class="section-link">
       <a href="{{ '/kontakt/' | relative_url }}">Kontakt →</a>
     </p>
+
   </div>
 </section>
-/* Planung mit Klarheit – Illustration */
-
-.planung-illustration {
-  margin-top: 3rem;
-  width: 100%;
-}
-
-.planung-illustration img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
