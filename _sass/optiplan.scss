@@ -933,10 +933,17 @@ body {
   margin-bottom: 1.5rem;
 }
 
-/* Abstand zwischen Beschreibung und Illustration */
+/* Planung mit Klarheit – Illustration */
 
 .planung-illustration {
   margin-top: 1.5rem;
+  width: 100%;
+}
+
+.planung-illustration img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 /* Abschnitt 02 – Bild links, Text rechts */
