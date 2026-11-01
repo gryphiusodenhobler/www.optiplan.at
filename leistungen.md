@@ -33,20 +33,27 @@ permalink: /leistungen/
     alt=""
   >
 </button>
-
 <button
-  class="optiplan-tile optiplan-tile--illustrated"
+  class="optiplan-tile optiplan-tile--composed"
   type="button"
   data-service="1"
   aria-expanded="false"
   aria-label="Beratung und Konzepte"
 >
-  <img
-    class="optiplan-tile-artwork"
-    src="{{ '/assets/leistung-beratung-konzepte.png' | relative_url }}"
-    alt=""
-  >
+  <span class="optiplan-tile-visual">
+    <img
+      src="{{ '/assets/leistung-beratung-konzepte.png' | relative_url }}"
+      alt=""
+    >
+  </span>
+
+  <span class="optiplan-tile-caption">
+    <span class="optiplan-tile-caption-title">
+      Beratung &amp; Konzepte
+    </span>
+  </span>
 </button>
+
       <button class="optiplan-tile" type="button" data-service="2" aria-expanded="false">
         <span class="optiplan-tile-title">Berechnung &amp; Dimensionierung</span>
       </button>
