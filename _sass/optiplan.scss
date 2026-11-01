@@ -1255,3 +1255,17 @@ body {
 .optiplan-tile-title {
   flex-shrink: 0;
 }
+/* OPTIPLAN – LEISTUNGSKACHELN MIT INTEGRIERTER GRAFIK */
+
+.optiplan-tile--illustrated {
+  padding: 0;
+  overflow: hidden;
+  display: block;
+}
+
+.optiplan-tile-artwork {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
