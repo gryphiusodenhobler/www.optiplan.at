@@ -13,38 +13,46 @@ permalink: /leistungen/
       Wir planen und begleiten technische Gebäudeausrüstung –
       von der ersten Konzeption bis zur fertigen Ausführung.
     </p>
+    <p class="services-hint" id="services-hint">Leistung auswählen, um mehr zu erfahren.</p>
   </header>
 
-  <div class="optiplan-service-tiles">
+  <div class="optiplan-service-tiles" aria-describedby="services-hint">
 
-    <!-- Erste Kachelreihe -->
-    <div class="optiplan-tile-row">
+
 
 <button
   class="optiplan-tile optiplan-tile--illustrated"
   type="button"
   data-service="0"
   aria-expanded="false"
+  aria-controls="service-panel"
   aria-label="Technische Gebäudeplanung"
 >
-  <img
+  <span class="optiplan-tile-visual" aria-hidden="true">
+    <img
     class="optiplan-tile-artwork"
     src="{{ '/assets/leistung-gebaeudeplanung.png' | relative_url }}"
     alt=""
-  >
+   width="1254" height="1254">
+  </span>
+  <span class="optiplan-tile-caption">Technische<br>Gebäudeplanung</span>
 </button>
 <button
   class="optiplan-tile optiplan-tile--illustrated"
   type="button"
   data-service="1"
   aria-expanded="false"
+  aria-controls="service-panel"
   aria-label="Beratung und Konzepte"
 >
-  <img
+  <span class="optiplan-tile-visual" aria-hidden="true">
+    <img
     class="optiplan-tile-artwork"
     src="{{ '/assets/leistung-beratung-konzepte.png' | relative_url }}"
     alt=""
-  >
+   width="1254" height="1254">
+  </span>
+  <span class="optiplan-tile-caption">Beratung &amp;<br>Konzepte</span>
 </button>
 
       <button
@@ -52,19 +60,21 @@ permalink: /leistungen/
   type="button"
   data-service="2"
   aria-expanded="false"
+  aria-controls="service-panel"
   aria-label="Berechnung und Dimensionierung"
 >
-  <img
+  <span class="optiplan-tile-visual" aria-hidden="true">
+    <img
     class="optiplan-tile-artwork"
     src="{{ '/assets/leistung-berechnung-dimensionierung.png' | relative_url }}"
     alt=""
-  >
+   width="1254" height="1254">
+  </span>
+  <span class="optiplan-tile-caption">Berechnung &amp;<br>Dimensionierung</span>
 </button>
 
-    </div>
-
-    <!-- Gemeinsames Textfenster -->
-    <section class="optiplan-service-panel" id="service-panel" aria-live="polite" hidden>
+    <!-- Gemeinsames Textfenster folgt der ausgewählten Bildschirmzeile. -->
+    <section class="optiplan-service-panel" id="service-panel" aria-labelledby="service-panel-title" aria-live="polite" hidden>
       <div class="optiplan-service-panel-header">
         <h3 id="service-panel-title"></h3>
         <button type="button" class="optiplan-service-close" aria-label="Leistungsbeschreibung schließen">×</button>
@@ -72,21 +82,24 @@ permalink: /leistungen/
       <div id="service-panel-content"></div>
     </section>
 
-    <!-- Zweite Kachelreihe -->
-    <div class="optiplan-tile-row">
+
 
       <button
   class="optiplan-tile optiplan-tile--illustrated"
   type="button"
   data-service="3"
   aria-expanded="false"
+  aria-controls="service-panel"
   aria-label="Ausschreibung und Vergabe"
 >
-  <img
+  <span class="optiplan-tile-visual" aria-hidden="true">
+    <img
     class="optiplan-tile-artwork"
     src="{{ '/assets/leistung-ausschreibung-vergabe.png' | relative_url }}"
     alt=""
-  >
+   width="1254" height="1254">
+  </span>
+  <span class="optiplan-tile-caption">Ausschreibung &amp;<br>Vergabe</span>
 </button>
 
       <button
@@ -94,13 +107,17 @@ permalink: /leistungen/
   type="button"
   data-service="4"
   aria-expanded="false"
+  aria-controls="service-panel"
   aria-label="Bauüberwachung und Kontrolle"
 >
-  <img
+  <span class="optiplan-tile-visual" aria-hidden="true">
+    <img
     class="optiplan-tile-artwork"
     src="{{ '/assets/leistung-bauueberwachung-kontrolle.png' | relative_url }}"
     alt=""
-  >
+   width="1254" height="1254">
+  </span>
+  <span class="optiplan-tile-caption">Bauüberwachung &amp;<br>Kontrolle</span>
 </button>
 
       <button
@@ -108,16 +125,18 @@ permalink: /leistungen/
   type="button"
   data-service="5"
   aria-expanded="false"
+  aria-controls="service-panel"
   aria-label="Abnahme und Projektabschluss"
 >
-  <img
+  <span class="optiplan-tile-visual" aria-hidden="true">
+    <img
     class="optiplan-tile-artwork"
     src="{{ '/assets/leistung-abnahme-projektabschluss.png' | relative_url }}"
     alt=""
-  >
+   width="1254" height="1254">
+  </span>
+  <span class="optiplan-tile-caption">Abnahme &amp;<br>Projektabschluss</span>
 </button>
-
-    </div>
 
   </div>
 </div>
@@ -159,6 +178,17 @@ document.addEventListener("DOMContentLoaded", function () {
   const closeButton = document.querySelector(".optiplan-service-close");
   let active = null;
 
+  const narrowLayout = window.matchMedia("(max-width: 768px)");
+
+  function positionPanel(index) {
+    const lastInRow = narrowLayout.matches ? index : Math.min(Math.floor(index / 3) * 3 + 2, tiles.length - 1);
+    tiles[lastInRow].after(panel);
+  }
+
+  narrowLayout.addEventListener("change", function () {
+    if (active !== null) positionPanel(active);
+  });
+
   function closePanel() {
     panel.hidden = true;
     active = null;
@@ -180,6 +210,7 @@ document.addEventListener("DOMContentLoaded", function () {
       active = index;
       panelTitle.textContent = services[index].title;
       panelContent.innerHTML = services[index].content;
+      positionPanel(index);
       panel.hidden = false;
 
       tiles.forEach(other => {
@@ -190,7 +221,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  closeButton.addEventListener("click", closePanel);
+  closeButton.addEventListener("click", function () {
+    const previous = active;
+    closePanel();
+    if (previous !== null) tiles[previous].focus();
+  });
+
+  panel.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") closeButton.click();
+  });
 });
 </script>
 <!-- GitHub Pages: erneute Veröffentlichung -->
