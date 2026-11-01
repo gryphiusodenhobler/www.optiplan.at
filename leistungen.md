@@ -34,29 +34,32 @@ permalink: /leistungen/
   >
 </button>
 <button
-  class="optiplan-tile optiplan-tile--composed"
+  class="optiplan-tile optiplan-tile--illustrated"
   type="button"
   data-service="1"
   aria-expanded="false"
   aria-label="Beratung und Konzepte"
 >
-  <span class="optiplan-tile-visual">
-    <img
-      src="{{ '/assets/leistung-beratung-konzepte.png' | relative_url }}"
-      alt=""
-    >
-  </span>
-
-  <span class="optiplan-tile-caption">
-    <span class="optiplan-tile-caption-title">
-      Beratung &amp; Konzepte
-    </span>
-  </span>
+  <img
+    class="optiplan-tile-artwork"
+    src="{{ '/assets/leistung-beratung-konzepte.png' | relative_url }}"
+    alt=""
+  >
 </button>
 
-      <button class="optiplan-tile" type="button" data-service="2" aria-expanded="false">
-        <span class="optiplan-tile-title">Berechnung &amp; Dimensionierung</span>
-      </button>
+      <button
+  class="optiplan-tile optiplan-tile--illustrated"
+  type="button"
+  data-service="2"
+  aria-expanded="false"
+  aria-label="Berechnung und Dimensionierung"
+>
+  <img
+    class="optiplan-tile-artwork"
+    src="{{ '/assets/leistung-berechnung-dimensionierung.png' | relative_url }}"
+    alt=""
+  >
+</button>
 
     </div>
 
@@ -72,17 +75,47 @@ permalink: /leistungen/
     <!-- Zweite Kachelreihe -->
     <div class="optiplan-tile-row">
 
-      <button class="optiplan-tile" type="button" data-service="3" aria-expanded="false">
-        <span class="optiplan-tile-title">Ausschreibung &amp; Vergabe</span>
-      </button>
+      <button
+  class="optiplan-tile optiplan-tile--illustrated"
+  type="button"
+  data-service="3"
+  aria-expanded="false"
+  aria-label="Ausschreibung und Vergabe"
+>
+  <img
+    class="optiplan-tile-artwork"
+    src="{{ '/assets/leistung-ausschreibung-vergabe.png' | relative_url }}"
+    alt=""
+  >
+</button>
 
-      <button class="optiplan-tile" type="button" data-service="4" aria-expanded="false">
-        <span class="optiplan-tile-title">Bauüberwachung &amp; Kontrolle</span>
-      </button>
+      <button
+  class="optiplan-tile optiplan-tile--illustrated"
+  type="button"
+  data-service="4"
+  aria-expanded="false"
+  aria-label="Bauüberwachung und Kontrolle"
+>
+  <img
+    class="optiplan-tile-artwork"
+    src="{{ '/assets/leistung-bauueberwachung-kontrolle.png' | relative_url }}"
+    alt=""
+  >
+</button>
 
-      <button class="optiplan-tile" type="button" data-service="5" aria-expanded="false">
-        <span class="optiplan-tile-title">Abnahme &amp; Projektabschluss</span>
-      </button>
+      <button
+  class="optiplan-tile optiplan-tile--illustrated"
+  type="button"
+  data-service="5"
+  aria-expanded="false"
+  aria-label="Abnahme und Projektabschluss"
+>
+  <img
+    class="optiplan-tile-artwork"
+    src="{{ '/assets/leistung-abnahme-projektabschluss.png' | relative_url }}"
+    alt=""
+  >
+</button>
 
     </div>
 
