@@ -140,3 +140,4 @@ document.addEventListener("DOMContentLoaded", function () {
   closeButton.addEventListener("click", closePanel);
 });
 </script>
+<!-- GitHub Pages: erneute Veröffentlichung -->
