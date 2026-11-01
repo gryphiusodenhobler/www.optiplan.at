@@ -557,7 +557,7 @@ body {
   letter-spacing: -0.045em;
 }
 
-.services-intro > p:last-child {
+.services-intro > p:not(.services-kicker):not(.services-hint) {
   max-width: 720px;
   margin: 0;
   color: #555;
@@ -762,6 +762,7 @@ body {
   width: 100%;
   max-width: none;
   float: none;
+  padding-inline-end: 0;
 }
 
 .page:has(.services-page) .page__inner-wrap {
@@ -1065,107 +1066,96 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-/* OPTIPLAN – LEISTUNGSKACHELN */
-
-.optiplan-service-tiles {
-  margin-top: 1rem;
+/* OPTIPLAN – Leistungskacheln: einheitliche Darstellung und Interaktion */
+.services-page { max-width: 1100px; }
+.services-intro { padding-bottom: 2.5rem; }
+.services-intro > p.services-hint:last-child {
+  margin: 1rem 0 0;
+  color: #666;
+  font-size: 0.8rem;
+  line-height: 1.5;
 }
-
-.optiplan-tile-row {
+.optiplan-service-tiles {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.5rem;
 }
-
 .optiplan-tile {
   appearance: none;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  position: relative;
+  min-width: 0;
   width: 100%;
-  aspect-ratio: 1 / 1;
-  padding: 1.8rem;
+  padding: 0;
   border: 1px solid #e5e5e5;
   border-radius: 0;
   background: #fff;
   color: #1f1f1f;
   text-align: left;
-  font-family: inherit;
+  font: inherit;
   cursor: pointer;
-  transition: border-color 0.25s ease, background-color 0.25s ease;
+  transition: border-color 180ms ease, transform 180ms ease;
 }
-
-.optiplan-tile:hover,
 .optiplan-tile:focus-visible,
-.optiplan-tile.is-active {
-  border-color: #8f2638;
-}
-
+.optiplan-tile.is-active { border-color: #8f2638; }
 .optiplan-tile:focus-visible {
   outline: 2px solid #8f2638;
-  outline-offset: 3px;
+  outline-offset: 4px;
 }
-
-.optiplan-tile-number {
-  font-size: 0.75rem;
-  color: #999;
-  letter-spacing: 0.1em;
+@media (hover: hover) and (pointer: fine) {
+  .optiplan-tile:hover { border-color: #8f2638; transform: translateY(-3px); }
 }
-
-.optiplan-tile-title {
+/* Die PNG-Beschriftung liegt außerhalb des sichtbaren Bildfensters.
+   Die Illustration behält ihr Seitenverhältnis; Titel werden als Text gesetzt. */
+.optiplan-tile-visual {
   display: block;
-  max-width: 95%;
-  font-size: clamp(1.1rem, 1.6vw, 1.45rem);
-  font-weight: 500;
-  line-height: 1.3;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+.optiplan-tile-artwork {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.optiplan-tile-caption {
+  display: block;
+  flex: 1;
+  margin: 0 6%;
+  padding: 0.85rem 0 1rem;
+  border-top: 1px solid #aaa;
+  font-size: clamp(1.15rem, 2.05vw, 1.4rem);
+  font-weight: 400;
+  line-height: 1.2;
   letter-spacing: -0.025em;
+  overflow-wrap: anywhere;
 }
-
-.optiplan-tile-plus {
-  position: absolute;
-  top: 1.5rem;
-  right: 1.8rem;
-  font-size: 1.4rem;
-  font-weight: 300;
-  color: #8f2638;
-}
-
-.optiplan-tile.is-active .optiplan-tile-plus {
-  transform: rotate(45deg);
-}
-
-/* Textfenster zwischen den Kachelreihen */
-
 .optiplan-service-panel {
-  margin: 1.5rem 0;
-  padding: 2.5rem 0 2.8rem;
+  grid-column: 1 / -1;
+  min-width: 0;
+  padding: 1.75rem 0;
   border-top: 1px solid #8f2638;
   border-bottom: 1px solid #e5e5e5;
 }
-
-.optiplan-service-panel[hidden] {
-  display: none;
-}
-
+.optiplan-service-panel[hidden] { display: none; }
 .optiplan-service-panel-header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 2rem;
-  margin-bottom: 1.5rem;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
-
 .optiplan-service-panel h3 {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: clamp(1.5rem, 2.4vw, 2rem);
+  font-size: clamp(1.35rem, 2.4vw, 2rem);
   font-weight: 500;
+  line-height: 1.25;
   letter-spacing: -0.035em;
+  overflow-wrap: anywhere;
 }
-
 .optiplan-service-panel p {
   max-width: 760px;
   margin: 0 0 1rem;
@@ -1173,120 +1163,33 @@ body {
   font-size: 1rem;
   line-height: 1.75;
 }
-
-.optiplan-service-panel p:last-child {
-  margin-bottom: 0;
-}
-
+.optiplan-service-panel p:last-child { margin-bottom: 0; }
 .optiplan-service-close {
   appearance: none;
+  flex-shrink: 0;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0;
   border: 0;
   background: transparent;
-  color: #777;
+  color: #666;
+  font: inherit;
   font-size: 1.8rem;
   line-height: 1;
   cursor: pointer;
 }
-
-.optiplan-service-close:hover {
-  color: #8f2638;
+.optiplan-service-close:hover { color: #8f2638; }
+.optiplan-service-close:focus-visible {
+  outline: 2px solid #8f2638;
+  outline-offset: 2px;
 }
-
-/* Smartphone */
-
 @media (max-width: 768px) {
-  .optiplan-tile-row {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-
-  .optiplan-tile {
-    aspect-ratio: auto;
-    min-height: 180px;
-    padding: 1.5rem;
-  }
-
-  .optiplan-tile-title {
-    font-size: 1.25rem;
-  }
-
-  .optiplan-service-panel {
-    padding: 2rem 0;
-    margin: 1rem 0;
-  }
+  .services-intro { padding-bottom: 2.5rem; }
+  .optiplan-service-tiles { grid-template-columns: minmax(0, 1fr); gap: 1rem; }
+  .optiplan-tile-caption { font-size: clamp(1.25rem, 5.6vw, 1.65rem); }
+  .optiplan-service-panel { padding: 1.5rem 0; }
 }
-/* OPTIPLAN – LEISTUNGSKACHELN: LAYOUT-FEINSCHLIFF */
-
-.optiplan-tile-row:last-child {
-  margin-top: 1.5rem;
-}
-
-.optiplan-service-panel:not([hidden]) + .optiplan-tile-row {
-  margin-top: 0;
-}
-
-.optiplan-tile {
-  justify-content: flex-end;
-}
-
-.optiplan-tile-title {
-  font-size: clamp(1.05rem, 1.45vw, 1.3rem);
-  line-height: 1.3;
-}
-
-@media (max-width: 768px) {
-  .optiplan-tile-title {
-    font-size: 1.25rem;
-  }
-}
-/* OPTIPLAN – ILLUSTRATIONEN LEISTUNGSKACHELN */
-
-.optiplan-tile-image {
-  display: block;
-  width: 100%;
-  height: 72%;
-  object-fit: contain;
-  object-position: center;
-  flex-shrink: 1;
-  min-height: 0;
-  margin-bottom: auto;
-}
-
-.optiplan-tile-title {
-  flex-shrink: 0;
-}
-/* OPTIPLAN – LEISTUNGSKACHELN MIT INTEGRIERTER GRAFIK */
-
-.optiplan-tile--illustrated {
-  padding: 0;
-  overflow: hidden;
-  display: block;
-}
-
-.optiplan-tile-artwork {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
-}
-/* Exakt positionierte Trennlinie */
-.optiplan-tile--composed .optiplan-tile-caption {
-  box-sizing: border-box;
-  flex: 1;
-  min-height: 0;
-  margin: 0 5.5%;
-  padding: 4.5% 0 0;
-  border-top: 1px solid #d6d6d6;
-}
-
-/* Beschriftung */
-.optiplan-tile--composed .optiplan-tile-caption-title {
-  display: block;
-  margin: 0;
-  color: #1f1f1f;
-  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
-  font-size: clamp(0.9rem, 1.3vw, 1.2rem);
-  font-weight: 600;
-  line-height: 1.25;
-  letter-spacing: -0.025em;
+@media (prefers-reduced-motion: reduce) {
+  .optiplan-tile { transition: none; }
+  .optiplan-tile:hover { transform: none; }
 }
