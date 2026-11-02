@@ -68,11 +68,6 @@ body {
   box-shadow: none;
 }
 
-.masthead__inner-wrap {
-  max-width: 1400px;
-  padding: 1.5rem 4rem;
-}
-
 .site-title {
   font-weight: 600;
   letter-spacing: -0.02em;
@@ -201,9 +196,9 @@ body {
 }
 
 .masthead__inner-wrap {
-  max-width: 1400px;
+  max-width: 1240px;
   margin: 0 auto;
-  padding: 1.6rem 4rem;
+  padding: 1.6rem 70px;
 }
 
 .greedy-nav {
@@ -220,36 +215,114 @@ body {
 
 .greedy-nav .visible-links {
   margin-left: auto;
+  align-items: center;
 }
 
-.greedy-nav .visible-links a {
-  margin-left: 2.2rem;
-  padding: 0;
-  font-size: 0.82rem;
+.greedy-nav .visible-links .masthead__menu-item {
+  padding-inline-start: 36px;
+}
+
+.greedy-nav .visible-links a,
+.greedy-nav .hidden-links a {
+  position: relative;
+  margin: 0;
+  padding: 12px 0;
+  font-size: 15px;
   font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0;
   color: #333;
-  transition: opacity 0.2s ease;
+  transition: none;
 }
 
-.greedy-nav .visible-links a:hover {
-  color: #111;
-  opacity: 0.55;
+.greedy-nav .visible-links a:hover,
+.greedy-nav .hidden-links a:hover {
+  color: #333;
+  background: transparent;
+  opacity: 1;
 }
 
-.greedy-nav .visible-links a::before {
+.greedy-nav .visible-links a::before,
+.greedy-nav .hidden-links a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  inset-inline: 0;
+  bottom: 5px;
+  height: 2px;
+  width: auto;
+  background: #8f2638;
+  transform: none;
+  opacity: 0;
+  transition: none;
+}
+
+.greedy-nav .visible-links a:hover::before,
+.greedy-nav .visible-links a[aria-current]::before,
+.greedy-nav .visible-links a:focus-visible::before,
+.greedy-nav .hidden-links a:hover::before,
+.greedy-nav .hidden-links a[aria-current]::before,
+.greedy-nav .hidden-links a:focus-visible::before {
+  transform: none;
+  opacity: 1;
+}
+
+.greedy-nav .visible-links a:focus-visible,
+.greedy-nav .hidden-links a:focus-visible,
+.greedy-nav__toggle:focus-visible {
+  outline: 2px solid #8f2638;
+  outline-offset: -2px;
+}
+
+.greedy-nav .hidden-links {
+  padding: 8px 20px;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.greedy-nav .hidden-links::before,
+.greedy-nav .hidden-links::after {
   display: none;
+}
+
+.greedy-nav .hidden-links li {
+  padding: 0;
+  border: 0;
+}
+
+.greedy-nav .hidden-links a {
+  width: max-content;
+}
+
+.greedy-nav__toggle {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+@media (max-width: 1024px) {
+  .masthead__inner-wrap { padding-inline: 32px; }
 }
 
 /* Mobil etwas kompakter */
 
 @media (max-width: 768px) {
   .masthead__inner-wrap {
-    padding: 1.25rem 1.5rem;
+    padding: 1.25rem 20px;
   }
 
   .greedy-nav .site-title {
     font-size: 0.9rem;
   }
+}
+
+/* Auf schmalen Geräten bleibt das Logo unverändert in einer eigenen Zeile. */
+@media (max-width: 480px) {
+  .masthead__inner-wrap { padding-inline: 8px; }
+  .greedy-nav { flex-wrap: wrap; }
+  .greedy-nav .site-title { flex-basis: 100%; margin-inline-end: 0; }
+  .greedy-nav .visible-links { flex-basis: 0; }
+  .greedy-nav__toggle { margin-inline-start: auto; }
 }
 /* OPTIPLAN LOGO */
 
