@@ -15,10 +15,13 @@
   <span class="logo-opti">Opti</span><span class="logo-plan">plan</span>
 </a> 
         <ul class="visible-links">
+          {%- assign current_section = page.url | remove: 'index.html' | split: '/' | compact -%}
           {%- for link in site.data.navigation.main -%}
+            {%- assign link_section = link.url | remove: 'index.html' | split: '/' | compact -%}
             <li class="masthead__menu-item">
               <a
                 href="{{ link.url | relative_url }}"
+                {% if current_section[1] == link_section[1] and link_section[1] != nil %} aria-current="page"{% endif %}
                 {% if link.description %} title="{{ link.description }}"{% endif %}
                 {% if link.target %} target="{{ link.target }}"{% endif %}
               >{{ link.title }}</a>
